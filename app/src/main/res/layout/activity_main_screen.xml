@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context=".MainScreenActivity">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="20dp"
+                android:src="@drawable/ic_jordan" />
+            <VideoView
+                android:id="@+id/videoView"
+                android:layout_gravity="center"
+                android:layout_width="360dp"
+                android:layout_height="202.5dp"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="КОЛЛЕКЦИЯ JORDAN PARIS \nSAINT-GERMAIN"
+                android:fontFamily="@font/roboto_regular"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:textSize="18sp"
+                android:textAlignment="center"
+                android:layout_marginTop="20dp"/>
+            <TextView
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Всегда роскошные, всегда легендарные"
+                android:fontFamily="@font/roboto_regular"
+                android:textColor="@color/black"
+                android:textSize="6.8dp"
+                android:textAlignment="center"/>
+            <Button
+                android:layout_marginTop="5dp"
+                android:layout_width="75dp"
+                android:layout_height="35dp"
+                android:layout_gravity="center"
+                style="@style/mainscreenButton"
+                android:text="Купить"
+                android:textSize="8dp"/>
+            <ImageView
+                android:layout_marginTop="20dp"
+                android:layout_width="wrap_content"
+                android:layout_height="390dp"
+                android:src="@drawable/image_10"
+                android:layout_marginStart="200px"
+                android:layout_marginEnd="200px"/>
+            <LinearLayout
+                android:layout_margin="20dp"
+                android:layout_marginStart="76dp"
+                android:layout_marginEnd="76dp"
+                android:layout_width="wrap_content"
+                android:layout_height="450dp"
+                android:background="@drawable/image_7">
+                <ImageView
+                    android:layout_gravity="center"
+                    android:layout_width="wrap_content"
+                    android:layout_height="330dp"
+                    android:src="@drawable/image_11"/>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

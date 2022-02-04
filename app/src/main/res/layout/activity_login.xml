@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LoginScreenActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="308px"
+            android:layout_height="55px"
+            android:layout_marginTop="175dp"
+            android:src="@drawable/ic_logo_black"
+            android:layout_gravity="center"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:fontFamily="@font/roboto_regular"
+            android:textStyle="bold"
+            android:layout_gravity="center"
+            android:textAlignment="center"
+            android:textSize="22sp"
+            android:letterSpacing="0.1"
+            android:layout_marginTop="20dp"
+            android:text="ЕДИНЫЙ АККАУНТ ДЛЯ \nЛЮБОЙ СРЕДЫ NIKE"/>
+        <EditText
+            android:id="@+id/login_emailField"
+            android:layout_width="match_parent"
+            android:layout_height="100px"
+            android:layout_marginTop="60dp"
+            android:layout_marginStart="100px"
+            android:layout_marginEnd="100px"
+            style="@style/login_emailField"
+            android:hint="Адрес электронной почты"
+            android:inputType="textEmailAddress"
+            android:background="@drawable/login_textfield"
+            />
+        <EditText
+            android:id="@+id/login_passwordField"
+            android:layout_width="match_parent"
+            android:layout_height="100px"
+            android:layout_marginTop="20dp"
+            android:layout_marginStart="100px"
+            android:layout_marginEnd="100px"
+            style="@style/login_emailField"
+            android:hint="Пароль"
+            android:inputType="textPassword"
+            android:background="@drawable/login_textfield"
+            />
+        <Button
+            android:onClick="loginButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Войти"
+            android:layout_marginStart="100px"
+            android:layout_marginEnd="100px"
+            android:layout_marginTop="40dp"
+            style="@style/login_button"/>
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
