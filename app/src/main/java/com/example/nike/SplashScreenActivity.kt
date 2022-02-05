@@ -23,7 +23,6 @@ class SplashScreenActivity : AppCompatActivity() {
             override fun onFinish() {
                 val changePage = Intent(this@SplashScreenActivity, StartScreenActivity::class.java)
                 startActivity(changePage)
-                finishActivity(R.layout.activity_splash)
             }
         }
         timer.start()

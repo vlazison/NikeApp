@@ -12,7 +12,8 @@ class MainScreenActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(com.example.nike.R.layout.activity_main_screen)
-
+        StartScreenActivity.StartScreenClass.activity?.finish()
+        LoginScreenActivity.LoginScreenClass.activity?.finish()
         val videoView = findViewById<VideoView>(R.id.videoView)
         val mediaController = MediaController(this)
         mediaController.setAnchorView(videoView)
