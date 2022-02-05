@@ -16,11 +16,11 @@ class StartScreenActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_start_screen)
         StartScreenClass.activity = this@StartScreenActivity
+        SplashScreenActivity.SplashScreenClass.activity?.finish()
     }
 
     fun goToLogin(view: View) {
         val changePage = Intent(this@StartScreenActivity, LoginScreenActivity::class.java)
         startActivity(changePage)
-        SplashScreenActivity.SplashScreenClass.activity?.finish()
     }
 }
